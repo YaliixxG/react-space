@@ -25,8 +25,7 @@ class Demo extends Component {
     render() {
         return (
             <h2 className="demo-date">
-                {' '}
-                {this.state.date.toLocaleTimeString()}{' '}
+                {this.state.date.toLocaleTimeString()}
             </h2>
         )
     }
