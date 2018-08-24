@@ -3,6 +3,8 @@ import logo from './img/me.jpg'
 import './App.css'
 import Demo from './demo.js'
 import Navbar from './navBar.js'
+import Loginzone from './Loginzone.js'
+import Loginin from './Loginin.js'
 
 class App extends Component {
     constructor(props) {
@@ -20,8 +22,10 @@ class App extends Component {
                         {this.state.show ? '挖坑埋神经病' : '浓痰嚼不烂'}
                     </h1>
                     <Demo />
+                    <Loginzone />
                 </header>
                 <Navbar />
+                <Loginin />
             </div>
         )
     }

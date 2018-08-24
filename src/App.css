@@ -1,165 +1,215 @@
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-  border-radius: 50%;
+    animation: App-logo-spin infinite 20s linear;
+    height: 80px;
+    border-radius: 50%;
 }
 
 .App-header {
-  height: 150px;
-  padding: 20px;
-  color: #9bd6c5;
+    height: 150px;
+    padding: 20px;
+    color: #9bd6c5;
 }
 
 .App-title {
-  font-size: 1.5em;
-  margin-bottom: 10px;
+    font-size: 1.5em;
+    margin-bottom: 10px;
 }
 
 .demo-date {
-  color: darkgray;
+    color: darkgray;
 }
 
 .navBar-wrap {
-  display: flex;
-  justify-content: space-around;
-  font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
 }
 
 .navBar-wrap a:hover {
-  background: #edf4ed;
+    background: #edf4ed;
 }
 
 .navBar-wrap a:nth-of-type(1) {
-  color: #584029;
+    color: #584029;
 }
 
 .navBar-read {
-  background: #584029;
+    background: #584029;
 }
 
 .navBar-wrap a:nth-of-type(2) {
-  color: #278dce;
+    color: #278dce;
 }
 
 .navBar-movie {
-  background: #278dce;
+    background: #278dce;
 }
 
 .navBar-wrap a:nth-of-type(3) {
-  color: #f37f00;
+    color: #f37f00;
 }
 
 .navBar-music {
-  background: #f37f00;
+    background: #f37f00;
 }
 
 .navBar-wrap a:nth-of-type(4) {
-  color: #0f959d;
+    color: #0f959d;
 }
 
 .navBar-team {
-  background: #0f959d;
+    background: #0f959d;
 }
 
 .navBar-wrap a:nth-of-type(5) {
-  color: #e85205;
+    color: #e85205;
 }
 
 .navBar-city {
-  background: #e85205;
+    background: #e85205;
 }
 
 .navBar-wrap a {
-  display: block;
-  width: 20%;
-  opacity: .7;
+    display: block;
+    width: 20%;
+    opacity: 0.7;
 }
 
 .navBar-wrap a:hover {
-  opacity: 1;
+    opacity: 1;
 }
 
 .artical-wrap {
-  width: 100%;
+    width: 100%;
 }
 
 .navBar-wrap ul {
-  width: 100%;
+    width: 100%;
 }
 
 .navBar-wrapper ul li {
-  overflow: hidden;
-  width: 20%;
-  height: 500px;
-  float: left;
-  opacity: .5;
-  overflow-y: scroll;
+    overflow: hidden;
+    width: 20%;
+    height: 500px;
+    float: left;
+    opacity: 0.5;
+    overflow-y: scroll;
 }
 
 .navBar-wrapper ul li:hover {
-  opacity: .8;
+    opacity: 0.8;
 }
 
 .navBar-wrapper ul div {
-  box-sizing: border-box;
-  padding: 10px;
-  height: 150px;
+    box-sizing: border-box;
+    padding: 10px;
+    height: 150px;
 }
 .navBar-wrapper ul div:hover {
-border: 3px solid darkgray;
+    border: 3px solid darkgray;
 }
 
-
 .navBar-wrapper ul img {
-  width: 100px;
-  height: 100%;
-  float: left;
+    width: 100px;
+    height: 100%;
+    float: left;
 }
 
 .navBar-wrapper ul p {
-  color: #fff;
-  width: 200px;
-  float: right;
-  text-align: right;
-  height: 25%;
-  line-height: 37.5px;
+    color: #fff;
+    width: 200px;
+    float: right;
+    text-align: right;
+    height: 25%;
+    line-height: 37.5px;
 }
 
 .cont {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
-.artical-news,.artical-music{
-  color: #fff;
+.artical-news,
+.artical-music {
+    color: #fff;
 }
-.artical-news h3{
-  font-weight: bold;
-  margin-top: 20px;
-  margin-bottom: 30px;
+.artical-news h3 {
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
-.artical-news span,.artical-music span{
-  display: block;
-  width: 100%;
-  text-align: center;
-  height: 30px;
-}
-
-.artical-music span:nth-of-type(1){
-  font-weight: bold;
+.artical-news span,
+.artical-music span {
+    display: block;
+    width: 100%;
+    text-align: center;
+    height: 30px;
 }
 
-
+.artical-music span:nth-of-type(1) {
+    font-weight: bold;
+}
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.login-wrap {
+    width: 20%;
+    height: 50px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.login-wrap div {
+    width: 50%;
+    float: left;
+    line-height: 50px;
+    text-align: center;
+    color: #ccc;
+}
+
+.loginin-bar {
+    position: fixed;
+    z-index: 10;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border: 1px solid #ccc;
+    width: 300px;
+    height: 300px;
+    background: #fff;
+    border-radius: 10px;
+    color: #999;
+}
+
+.loginin-bar h3 {
+    margin: 10px 0 30px 0;
+    font-size: 30px;
+    color: #9bd6c5;
+}
+
+.loginin-bar input {
+    width: 90%;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.loginin-bar input:nth-of-type(1) {
+    margin-bottom: 20px;
+}
+
+.loginin-bar input:nth-of-type(3) {
+    background: green;
 }
